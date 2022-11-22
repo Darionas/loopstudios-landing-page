@@ -59,6 +59,10 @@ body {
     justify-items: center;
 }
 
+.social_icons {
+    background-color: black;
+}
+
 /* style 1st component - mobile */
 
 /* style 2nd component - mobile */

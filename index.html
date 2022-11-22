@@ -8,11 +8,57 @@
   <meta name="description" content="Loopstudios landing page challenge on Frontend Mentor" />
   <meta name="author" content="Darius" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <!--<link rel="stylesheet" href="main.css" />-->
+  <link rel="stylesheet" href="main.css" />
   <!--<script defer src="main.js"></script>-->
 </head>
 <body>
     <div class="grid-container">
+        <header class="header_contaner">
+            <nav class="topnav">
+                <a href="#home" class="logo_container"><img class="logo_icon" src="images/logo.svg" alt="Logo icon" /></a>
+                <div class="myLinks">            
+                    <a href="#about">About</a>
+                    <a href="#careers">Careers</a>
+                    <a href="#events">Events</a>
+                    <a href="#products">Products</a>
+                    <a href="#support">Support</a>
+                </div>
+                <a href="javascript:void(0);" class="hamburger" onclick="toggle_hamburger()">
+                    <img class="hamburger_icon" src="images/icon-hamburger.svg" alt="Hamburger icon" /></a>
+            </nav>
+            <h1 class="title">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+        </header>
+        <main class="main_content">
+            <div class="intro_img">
+                <picture>
+                    <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-interactive.jpg">
+                    <source media="(min-width: 48rem)" srcset="images/desktop/image-interactive.jpg">
+                    <img class="image_interactive" src="images/mobile/image-interactive.jpg" alt="Image interactive" />
+                  </picture>
+            </div>
+            <article class="intro_content">
+                <h2 class="intro_title">THE LEADER IN INTERACTIVE VR</h2>
+                <p class="intro_article">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies
+                    around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+                </p>
+            </article>
+            <section class="creations">
+                <h2 class="creations_title">OUR CREATIONS</h2>
+                <div class="creations_img_container">
+                    <!--8 images-->
+                </div>
+                <button class="creations_btn">SEE ALL</button>
+            </section>
+        </main>
+        <footer class="footer_container">
+            <div class="social_icons">
+                <img class="facebook_icon" src="images/icon-facebook.svg" alt="Facebook icon" />
+                <img class="twitter_icon" src="images/icon-twitter.svg" alt="Twitter icon" />
+                <img class="pinterest_icon" src="images/icon-pinterest.svg" alt="Pinterest icon" />
+                <img class="instagram_icon" src="images/icon-instagram.svg" alt="Instagram icon" />
+            </div>
+            <p class="refsnes">&#169 2022 Loopstudios. All rights reserved.</p>
+        </footer>
         
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
