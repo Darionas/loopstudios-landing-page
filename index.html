@@ -9,11 +9,11 @@
   <meta name="author" content="Darius" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <link rel="stylesheet" href="main.css" />
-  <!--<script defer src="main.js"></script>-->
+  <script defer src="main.js"></script>
 </head>
 <body>
     <div class="grid-container">
-        <header class="header_contaner">
+        <header class="header_container">
             <nav class="topnav">
                 <a href="#home" class="logo_container"><img class="logo_icon" src="images/logo.svg" alt="Logo icon" /></a>
                 <div class="myLinks">            
@@ -24,7 +24,9 @@
                     <a href="#support">Support</a>
                 </div>
                 <a href="javascript:void(0);" class="hamburger" onclick="toggle_hamburger()">
-                    <img class="hamburger_icon" src="images/icon-hamburger.svg" alt="Hamburger icon" /></a>
+                    <img class="hamburger_icon" src="images/icon-hamburger.svg" alt="Hamburger icon" />
+                    <img class="close_icon" src="images/icon-close.svg" alt="Close icon" />
+                </a>
             </nav>
             <h1 class="title">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
         </header>
@@ -33,8 +35,8 @@
                 <picture>
                     <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-interactive.jpg">
                     <source media="(min-width: 48rem)" srcset="images/desktop/image-interactive.jpg">
-                    <img class="image_interactive" src="images/mobile/image-interactive.jpg" alt="Image interactive" />
-                  </picture>
+                    <img class="image_interactive" src="images/desktop/image-interactive.jpg" alt="Image interactive" />
+                </picture>
             </div>
             <article class="intro_content">
                 <h2 class="intro_title">THE LEADER IN INTERACTIVE VR</h2>
@@ -45,7 +47,46 @@
             <section class="creations">
                 <h2 class="creations_title">OUR CREATIONS</h2>
                 <div class="creations_img_container">
-                    <!--8 images-->
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-deep-earth.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-deep-earth.jpg">
+                        <img class="deep_earth" src="images/desktop/image-deep-earth.jpg" alt="Earth photo" />
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-night-arcade.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-night-arcade.jpg">
+                        <img class="night_arcade" src="images/desktop/image-night-arcade.jpg" alt="Arcade photo" />
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-soccer-team.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-soccer-team.jpg">
+                        <img class="soccer_team" src="images/desktop/image-soccer-team.jpg" alt="Football player photo" />
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-grid.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-grid.jpg">
+                        <img class="race" src="images/desktop/image-grid.jpg" alt="Race car photo" />
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-from-above.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-from-above.jpg">
+                        <img class="photo_from_above" src="images/desktop/image-from-above.jpg" alt="Photo from above" />
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-pocket-borealis.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-pocket-borealis.jpg">
+                        <img class="night_sky" src="images/desktop/image-pocket-borealis.jpg" alt="Night sky photo" />
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-curiosity.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-curiosity.jpg">
+                        <img class="curiosity" src="images/desktop/image-curiosity.jpg" alt="Curiosity photo" />
+                    </picture>
+                    <picture>
+                        <source media="(max-width: 47.9375rem)" srcset="images/mobile/image-fisheye.jpg">
+                        <source media="(min-width: 48rem)" srcset="images/desktop/image-fisheye.jpg">
+                        <img class="fisheye" src="images/desktop/image-fisheye.jpg" alt="Fisheye photo" />
+                    </picture>
                 </div>
                 <button class="creations_btn">SEE ALL</button>
             </section>
