@@ -48,10 +48,10 @@ body {
 }
 
 /*---------------------Mobile layout-------------------------*/
-
+/*
 * {
     border: 2px solid green;
-}
+}*/
 
 .grid-container {
     display: grid;
@@ -171,6 +171,226 @@ body {
         'creations_title'
         'creations_img_container'
         'creations_btn';
+    gap: 2rem;
+    justify-items: center;
+}
+
+.creations_title {
+    font-family: var(--ff-secondary);
+    font-size: 3rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-secondary-bgr);
+    text-align: center;
+    padding: 2rem;
+}
+
+.creations_img_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'earth_cont'
+        'arcade_cont'
+        'soccer_cont'
+        'race_cont'
+        'landscape_cont'
+        'nightSky_cont'
+        'curiosity_cont'
+        'fisheye_cont';
+    justify-items: center;
+    gap: 2rem;
+}
+
+/*---earth-----*/
+.earth_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'deep_earth'
+        'earth_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.earth_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+    /*border: 2px solid blue !important;*/
+    width: 48%;
+}
+
+/*--------arcade--------*/
+.arcade_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'night_arcade'
+        'arcade_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.arcade_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+    /*border: 2px solid blue !important;*/
+    width: 48%;
+    
+}
+
+/*-----soccer-------------*/
+.soccer_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'soccer_team'
+        'soccer_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.soccer_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+    /*border: 2px solid blue !important;*/
+    width: 48%;
+    
+}
+
+/*---------race------------*/
+.race_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'race'
+        'race_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.race_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+    /*border: 2px solid blue !important;*/
+    width: 48%;   
+}
+
+/*----------landscape----------------*/
+.landscape_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'landscape_from_above'
+        'landscape_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.landscape_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+   /*border: 2px solid blue !important;*/
+    width: 48%;
+}
+
+/*-------night sky---------*/
+.nightSky_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'night_sky'
+        'nightSky_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.nightSky_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+    /*border: 2px solid blue !important;*/
+    width: 48%;
+    
+}
+
+/*---------curiosity-------*/
+.curiosity_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'curiosity'
+        'curiosity_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.curiosity_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+    /*border: 2px solid blue !important;*/
+    width: 48%;
+}
+
+/*---------fish eye--------*/
+.fisheye_cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'fisheye'
+        'fisheye_title';
+    margin: 0 2rem 0 2rem;
+}
+
+.fisheye_title {
+    margin-top: -7rem;
+    padding: 0 0 0 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 2.5rem;
+    font-weight: var(--fw-300);
+    color: var(--clr-primary-bgr);
+    /*border: 2px solid blue !important;*/
+    width: 48%;
+}
+
+/*--------button------*/
+.creations_btn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'btn';
+    width: 100%;
+    justify-items: center;
+}
+
+.btn {
+    width: 35%;
+    font-family: var(--ff-primary);
+    font-size: 1.2rem;
+    font-weight: var(--fw-400);
+    color: var(--clr-secondary-bgr);
+    text-align: center;
+    padding: 0.5rem;
+    letter-spacing: 0.2rem;
+    border: 1px solid var(--clr-secondary-bgr);
 }
 
 /* style 3rd component - mobile */
@@ -240,8 +460,116 @@ body {
     grid-area: creations_img_container;
 }
 
+.earth_cont {
+    grid-area: earth_cont;
+}
+
+.deep_earth {
+    grid-area: deep_earth;
+}
+
+.earth_title {
+    grid-area: earth_title;
+}
+
+.deep_earth {
+    grid-area: deep_earth;
+}
+
+.earth_title {
+    grid-area: earth_title;
+}
+
+.arcade_cont {
+    grid-area: arcade_cont;
+}
+
+.night_arcade {
+    grid-area: night_arcade;
+}
+
+.arcade_title {
+    grid-area: arcade_title;
+}
+
+.soccer_cont {
+    grid-area: soccer_cont;
+}
+
+.soccer_team {
+    grid-area: soccer_team;
+}
+
+.soccer_title {
+    grid-area: soccer_title;
+}
+
+.race_cont {
+    grid-area: race_cont;
+}
+
+.race {
+    grid-area: race;
+}
+
+.race_title {
+    grid-area: race_title;
+}
+
+.landscape_cont {
+    grid-area: landscape_cont;
+}
+
+.landscape_from_above {
+    grid-area: landscape_from_above;
+}
+
+.landscape_title {
+    grid-area: landscape_title;
+}
+
+.nightSky_cont {
+    grid-area: nightSky_cont;
+}
+
+.night_sky {
+    grid-area: night_sky;
+}
+
+.nightSky_title {
+    grid-area: nightSky_title;
+}
+
+.curiosity_cont {
+    grid-area: curiosity_cont;
+}
+
+.curiosity {
+    grid-area: curiosity;
+}
+
+.curiosity_title {
+    grid-area: curiosity_title;
+}
+
+.fisheye_cont {
+    grid-area: fisheye_cont;
+}
+
+.fisheye {
+    grid-area: fisheye;
+}
+
+.fisheye_title {
+    grid-area: fisheye_title;
+}
+
 .creations_btn {
     grid-area: creations_btn;
+}
+
+.btn {
+    grid-area: btn;
 }
 
 .footer_container {
