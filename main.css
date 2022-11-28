@@ -106,7 +106,7 @@ body {
     grid-template-areas:
         'hamburger_icon'
         'close_icon';
-    justify-items: end;
+    justify-items: center;
     align-items: center;
 }
 
@@ -150,12 +150,12 @@ body {
 .title {
     font-family: var(--ff-secondary);
     font-size: 4rem;
-    font-weight: var(--fw-300);
+    font-weight: var(--fw-400);
     color: var(--clr-primary-bgr);
     padding: 2rem;
     margin: 15rem 2rem 18rem 3rem;
     border: 2px solid var(--clr-primary-bgr);
-    width: 85%;
+    width: 80%;
 }
 
 /* style 2nd component - mobile */
@@ -172,22 +172,30 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas:
         'intro_img'
-        'intro_title'
-        'intro_article';
+        'article_container';
     gap: 2rem;
     justify-items: center;
     margin: 8rem 2rem 4rem 2rem;
 }
 
 .intro_img {
-    width: 95%;
+    width: 90%;
     margin-left: 1rem;
+}
+
+.article_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'intro_title'
+        'intro_article';
+    width: 85%;
 }
 
 .intro_title {
     font-family: var(--ff-secondary);
     font-size: 3rem;
-    font-weight: var(--fw-300);
+    font-weight: var(--fw-400);
     color: var(--clr-secondary-bgr);
     text-align: center;
     margin-top: 1rem;
@@ -216,7 +224,7 @@ body {
 .creations_title {
     font-family: var(--ff-secondary);
     font-size: 3rem;
-    font-weight: var(--fw-300);
+    font-weight: var(--fw-400);
     color: var(--clr-secondary-bgr);
     text-align: center;
     padding: 2rem;
@@ -246,16 +254,18 @@ body {
         'deep_earth'
         'earth_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .earth_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 48%;
+    border: 2px solid yellow;
 }
 
 /*--------arcade--------*/
@@ -266,11 +276,12 @@ body {
         'night_arcade'
         'arcade_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .arcade_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
@@ -286,11 +297,12 @@ body {
         'soccer_team'
         'soccer_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .soccer_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
@@ -306,11 +318,12 @@ body {
         'race'
         'race_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .race_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
@@ -326,11 +339,12 @@ body {
         'landscape_from_above'
         'landscape_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .landscape_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
@@ -346,11 +360,12 @@ body {
         'night_sky'
         'nightSky_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .nightSky_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
@@ -366,11 +381,12 @@ body {
         'curiosity'
         'curiosity_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .curiosity_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
@@ -386,11 +402,12 @@ body {
         'fisheye'
         'fisheye_title';
     margin: 0 2rem 0 2rem;
+    width: 85%;
 }
 
 .fisheye_title {
     margin-top: -7rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 2rem 2rem;
     font-family: var(--ff-secondary);
     font-size: 2.5rem;
     font-weight: var(--fw-300);
@@ -551,14 +568,193 @@ body {
 
 /*---------------------Desktop layout-------------------------*/
 @media screen and (min-width: 48rem) {
+   
+    * {
+        border: 2px solid green;
+   }
 
+ /*
 * {
     display: none;
-}
+}*/
     
-/* style 1st component - desktop */    
-   
+/* style 1st component - desktop */  
+.header_container {
+    background-image: url('images/desktop/image-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header_nav {
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        'header_logo_container header_navLinks';
+    padding-top: 5rem;
+}
+
+.hamburger_container {
+    display: none;
+}
+
+.header_logo_container {
+    justify-items: start;
+    padding-left: 4rem;
+    margin: 0;
+    margin-left: 20rem;
+}
+
+.header_navLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'header_navLinks_about header_navLinks_careers header_navLinks_events header_navLinks_products header_navLinks_support';
+    gap: 0;
+    padding: 0 10rem 0 23rem;
+}
+
+[class*='header_navLinks_'] {
+    font-size: 1rem;
+    font-weight: var(--fw-400);
+    text-align: center;
+    align-self: center;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 8rem;
+    justify-self: start;
+    width: 70rem;
+    padding-left: 4rem;
+    margin-left: 20rem;
+}
+
 /* style 2nd component - desktop */
+.intro_content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'intro_img article_container';
+}
+
+.intro_img {
+    width: 100%;
+    justify-self: start;
+    margin-left: 18rem;
+}
+
+.article_container {
+    width: 85%;
+    padding: 7rem;
+    justify-self: start;
+    margin: 22rem 0 0 0;
+    background-color: var(--clr-primary-bgr);
+    gap: 2rem;
+}
+
+.intro_title {
+    align-self: end;
+    justify-self: center;
+    font-size: 4rem;
+    text-align: left;
+}
+
+.intro_article {
+    align-self: start;
+    justify-self: center;
+    text-align: left;
+}
+
+.creations {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'creations_title creations_btn'
+        'creations_img_container creations_img_container';
+}
+
+.creations_title {
+    font-size: 4rem;
+    justify-self: center;
+    margin-left: 2rem;
+}
+
+.btn {
+    /*width: 30%;*/
+    justify-self: end;
+    margin: 2rem 1.2rem 2rem 0;
+    padding: 0.5rem;
+}
+
+.creations_img_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'earth_cont arcade_cont soccer_cont race_cont'
+        'landscape_cont nightSky_cont curiosity_cont fisheye_cont';
+    gap: 0.5rem;
+    justify-self: center;
+    width: 82%;
+    margin: 0 0 0 6rem;
+}
+
+.earth_cont {
+    align-self: start;
+}
+
+.earth_title {
+    width: 65%;
+}
+
+.arcade_cont {
+    align-self: start;
+}
+
+.arcade_title {
+    width: 65%;
+}
+
+.soccer_cont {
+    align-self: start;
+}
+
+.soccer_title {
+    width: 65%;
+}
+
+.race_cont {
+    align-self: start;
+}
+
+.landscape_cont {
+    align-self: start;
+}
+
+.landscape_title {
+    width: 65%;
+}
+
+.nightSky_cont {
+    align-self: start;
+}
+
+.nightSky_title {
+    width: 65%;
+}
+
+.curiosity_cont {
+    align-self: start;
+}
+
+.curiosity_title {
+    width: 65%;
+}
+
+.fisheye_cont {
+    align-self: start;
+}
+
+.fisheye_title {
+    width: 65%;
+}
     
 /* style 3rd component - desktop */
 /* 3rd component styled in external stylesheet */
@@ -632,6 +828,10 @@ body {
 
 .intro_img {
     grid-area: intro_img;
+}
+
+.article_container {
+    grid-area: article_container;
 }
 
 .intro_title {
