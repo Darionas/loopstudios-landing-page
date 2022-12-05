@@ -8,10 +8,10 @@
     const links_collection = document.getElementsByClassName('header_navLinks')[0].children;
     
 /*----upper case of navigation-----*/    
-    for(let i = 0; i < links_collection.length; i++) {
+   /* for(let i = 0; i < links_collection.length; i++) {
        const all_links = links_collection[i];
        all_links.style.textTransform = 'uppercase';
-    }
+    }*/
 
 /*-----toggle hamburger icon------*/
 /*---click hamburger-----*/
@@ -19,8 +19,8 @@ hamburger_icon.addEventListener('click', click_hamburger);
 function click_hamburger() {
     if(my_links.style.display === 'grid') {
         my_links.style.display = 'none';
-        hamburger_icon.style.display = 'block';
         close_icon.style.display = 'none';
+        hamburger_icon.style.display = 'block';
     } else {
         my_links.style.display = 'grid';
         my_links.style.backgroundColor = 'hsl(0, 0%, 0%)';
