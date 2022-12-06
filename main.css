@@ -189,8 +189,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas:
         'intro_img'
-        'intro_title'
-        'intro_article';
+        'intro_text';
     gap: 2rem;
     justify-items: center;
     margin: 8rem 2rem 4rem 2rem;
@@ -200,6 +199,15 @@ body {
 .intro_img {
     justify-self: center;
     width: 90%;
+}
+
+.intro_text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'intro_title'
+        'intro_article';
+    justify-items: center;
 }
 
 .intro_title {
@@ -771,30 +779,88 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    /*border: 2px solid green;*/
+   /*border: 2px solid green;*/
 }
 
 .header_navLinks_about {
     max-width: 5rem;
+    position: relative;
 } 
+
+.header_navLinks_about:hover:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+}
 
 .header_navLinks_careers {
     max-width: 7rem;
+    position: relative;
 } 
+
+.header_navLinks_careers:hover:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+}
 
 .header_navLinks_events {
     max-width: 5rem;
+    position: relative;
 } 
+
+.header_navLinks_events:hover:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+}
 
 .header_navLinks_products {
     max-width: 8rem;
+    position: relative;
 } 
+
+.header_navLinks_products:hover:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+}
 
 .header_navLinks_support {
     max-width: 6rem;
+    position: relative;
 }
 
-
+.header_navLinks_support:hover:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+}
 
 /*----------------------------------------------------------*/
 .title {
@@ -802,9 +868,48 @@ body {
     margin: 19rem 6rem 19rem 6rem;
     max-width: 60rem;
 }
-
    
 /* style 2nd component - desktop */
+.intro_content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        '. . intro_img intro_img intro_img intro_img intro_img . . . . .'
+        '. . intro_img intro_img intro_img intro_img intro_img intro_text intro_text intro_text . .'
+        '. . intro_img intro_img intro_img intro_img intro_img intro_text intro_text intro_text . .'
+        '. . . . . . . intro_text intro_text intro_text . .';
+    gap: 0;
+    max-width: 160rem;
+    border: 2px solid green;
+}
+
+.intro_img {
+    justify-self: start;
+    /*margin: 0 0 0 10rem;*/
+    border: 2px solid green;
+}
+
+.intro_text {
+    gap: 1.5rem; 
+    justify-self: start;
+    padding: 5rem 7rem;
+    margin: 0 0 0 -18rem;
+    background-color: var(--clr-primary-bgr);
+    border: 2px solid green;
+    max-width: 55rem;
+    min-width: 50rem;
+    max-height: 65rem;
+}
+
+.intro_title {
+    align-self: end;
+    text-align: left;
+}
+
+.intro_article {
+    text-align: left;
+    padding: 0;
+}
     
 /* style 3rd component - desktop */
 /* 3rd component styled in external stylesheet */
@@ -878,6 +983,10 @@ body {
 
 .intro_img {
     grid-area: intro_img;
+}
+
+.intro_text {
+    grid-area: intro_text;
 }
 
 .intro_title {
