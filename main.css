@@ -125,7 +125,7 @@ body {
 .hamburger_icon {
     padding: 0.2rem;
     margin: 1.5rem 4rem;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 .close_icon {
@@ -567,7 +567,7 @@ body {
 }
 
 .btn {
-    width: 35%;
+    width: 25%;
     font-family: var(--ff-primary);
     font-size: 1.2rem;
     font-weight: var(--fw-400);
@@ -787,7 +787,7 @@ body {
     position: relative;
 } 
 
-.header_navLinks_about:hover:after {
+.header_navLinks_about::after {
     content: '';
     position: absolute;
     width: 50%;
@@ -796,6 +796,12 @@ body {
     background-color: white;
     bottom: -5px;
     left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.header_navLinks_about:hover::after {
+    transform: scale(1, 1);
 }
 
 .header_navLinks_careers {
@@ -803,7 +809,7 @@ body {
     position: relative;
 } 
 
-.header_navLinks_careers:hover:after {
+.header_navLinks_careers::after {
     content: '';
     position: absolute;
     width: 50%;
@@ -812,6 +818,12 @@ body {
     background-color: white;
     bottom: -5px;
     left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.header_navLinks_careers:hover::after {
+    transform: scale(1, 1);
 }
 
 .header_navLinks_events {
@@ -819,7 +831,7 @@ body {
     position: relative;
 } 
 
-.header_navLinks_events:hover:after {
+.header_navLinks_events::after {
     content: '';
     position: absolute;
     width: 50%;
@@ -828,6 +840,12 @@ body {
     background-color: white;
     bottom: -5px;
     left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.header_navLinks_events:hover::after {
+    transform: scale(1, 1);
 }
 
 .header_navLinks_products {
@@ -835,7 +853,7 @@ body {
     position: relative;
 } 
 
-.header_navLinks_products:hover:after {
+.header_navLinks_products::after {
     content: '';
     position: absolute;
     width: 50%;
@@ -844,6 +862,12 @@ body {
     background-color: white;
     bottom: -5px;
     left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.header_navLinks_products:hover::after {
+    transform: scale(1, 1);
 }
 
 .header_navLinks_support {
@@ -851,7 +875,7 @@ body {
     position: relative;
 }
 
-.header_navLinks_support:hover:after {
+.header_navLinks_support::after {
     content: '';
     position: absolute;
     width: 50%;
@@ -860,6 +884,12 @@ body {
     background-color: white;
     bottom: -5px;
     left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.header_navLinks_support:hover::after {
+    transform: scale(1, 1);
 }
 
 /*----------------------------------------------------------*/
@@ -874,41 +904,78 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
-        '. . intro_img intro_img intro_img intro_img intro_img . . . . .'
-        '. . intro_img intro_img intro_img intro_img intro_img intro_text intro_text intro_text . .'
-        '. . intro_img intro_img intro_img intro_img intro_img intro_text intro_text intro_text . .'
-        '. . . . . . . intro_text intro_text intro_text . .';
+        '. intro_img intro_img intro_img intro_img intro_img intro_img . . . . .'
+        '. intro_img intro_img intro_img intro_img intro_img intro_img intro_text intro_text intro_text intro_text .'
+        '. intro_img intro_img intro_img intro_img intro_img intro_img intro_text intro_text intro_text intro_text .'
+        '. . . . . . . intro_text intro_text intro_text intro_text .';
     gap: 0;
     max-width: 160rem;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 .intro_img {
-    justify-self: start;
-    /*margin: 0 0 0 10rem;*/
-    border: 2px solid green;
+    width: 100%;
+    justify-self: end;
+    margin: 0 -2rem 0 0;
+    /*border: 2px solid green;*/
 }
 
 .intro_text {
-    gap: 1.5rem; 
+    gap: 1.5rem;
     justify-self: start;
     padding: 5rem 7rem;
-    margin: 0 0 0 -18rem;
+    margin: 5rem 0 0 -12rem;
     background-color: var(--clr-primary-bgr);
-    border: 2px solid green;
-    max-width: 55rem;
-    min-width: 50rem;
-    max-height: 65rem;
+    /*border: 2px solid green;*/
 }
 
 .intro_title {
     align-self: end;
+    justify-self: start;
     text-align: left;
+    width: 90%;
+    /*border: 2px solid green;*/
 }
 
 .intro_article {
     text-align: left;
+    width: 100%;
     padding: 0;
+}
+
+.creations {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'creations_title creations_btn'
+        'creations_img_container creations_img_container';
+    border: 2px solid green;
+}
+
+.creations_title {
+    margin: 0 0 0 -12rem;
+    border: 2px solid green;
+}
+
+.creations_btn {
+    border: 2px solid green;
+}
+
+.btn {
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--clr-primary-bgr);
+    background-color: var(--clr-secondary-bgr);
+}
+
+.creations_img_container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        'earth_cont arcade_cont soccer_cont race_cont'
+        'landscape_cont nightSky_cont curiosity_cont fisheye_cont';
+    border: 2px solid green;
 }
     
 /* style 3rd component - desktop */
