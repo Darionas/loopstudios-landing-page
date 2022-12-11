@@ -7,6 +7,7 @@
     const close_icon = document.getElementsByClassName('close_icon')[0];
     const links_collection = document.getElementsByClassName('header_navLinks')[0].children;
     
+
 /*----upper case of navigation-----*/    
    /* for(let i = 0; i < links_collection.length; i++) {
        const all_links = links_collection[i];
