@@ -1014,10 +1014,14 @@ body {
 .nightSky_cont:hover,
 .curiosity_cont:hover,
 .fisheye_cont:hover {
-    opacity: 0.4;
+    opacity: 0.5;
     /*color: var(--clr-secondary-bgr);*/
 }
 
+.arcade_cont:hover .arcade_title {
+    opacity: 1.0;
+    color: black;
+}
 
     
 /* style 3rd component - desktop */
