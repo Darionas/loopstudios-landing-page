@@ -907,7 +907,7 @@ body {
     max-width: 60rem;
 }
    
-/* style 2nd component - desktop */
+/*style 2nd component - desktop */
 .intro_content {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1024,7 +1024,238 @@ body {
 }
 
     
-/* style 3rd component - desktop */
+/*style 3rd component - desktop */
+.footer_container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'footer_nav social_icons'
+        'footer_nav refsnes';
+    margin-top: 16rem;
+    /*border: 2px solid green;*/
+}
+
+.footer_nav {
+    justify-items: start;
+    margin: 0 0 3rem 0;
+    padding: 1.5rem;
+    /*border: 2px solid yellow;*/
+}
+
+.footer_logo_container {
+    margin: 4rem 0 4rem 0;
+}
+
+.footer_navLinks {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        'footer_navLinks_about footer_navLinks_careers footer_navLinks_events footer_navLinks_products footer_navLinks_support';
+    margin: 0 0 0 -1rem;
+    /*border: 2px solid yellow;*/
+}
+
+.footer_navLinks_about {
+    position: relative;
+}
+
+.footer_navLinks_about::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.footer_navLinks_about:hover::after {
+    transform: scale(1, 1);
+}
+
+
+.footer_navLinks_careers {
+    position: relative;
+}
+
+.footer_navLinks_careers::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.footer_navLinks_careers:hover::after {
+    transform: scale(1, 1);
+}
+
+.footer_navLinks_events {
+    position: relative;
+}
+
+.footer_navLinks_events::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.footer_navLinks_events:hover::after {
+    transform: scale(1, 1);
+}
+
+.footer_navLinks_products {
+    position: relative;
+}
+
+.footer_navLinks_products::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.footer_navLinks_products:hover::after {
+    transform: scale(1, 1);
+}
+
+.footer_navLinks_support {
+    position: relative;
+}
+
+.footer_navLinks_support::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 25%;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.footer_navLinks_support:hover::after {
+    transform: scale(1, 1);
+}
+
+.social_icons {
+    justify-self: center;
+    margin: 3rem 0 0 20rem;
+    padding: 0 1.5rem 0 1.5rem;
+    /*border: 2px solid yellow;*/
+}
+
+.facebook_icon_container {
+    position: relative;
+}
+
+.facebook_icon_container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -7px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.facebook_icon_container:hover::after {
+    transform: scale(1, 1);
+}
+
+.twitter_icon_container {
+    position: relative;
+}
+
+.twitter_icon_container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -7px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.twitter_icon_container:hover::after {
+    transform: scale(1, 1);
+}
+
+.pinterest_icon_container {
+    position: relative;
+}
+
+.pinterest_icon_container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -7px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.pinterest_icon_container:hover::after {
+    transform: scale(1, 1);
+}
+
+.instagram_icon_container {
+    position: relative;
+}
+
+.instagram_icon_container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: white;
+    bottom: -7px;
+    left: 0;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+.instagram_icon_container:hover::after {
+    transform: scale(1, 1);
+}
+
+.refsnes {
+    justify-self: center;
+    margin: 1.5rem 0 0 7rem;
+    /*border: 2px solid yellow;*/
+}
+
 /* 3rd component styled in external stylesheet */
     
 }
