@@ -1006,24 +1006,18 @@ body {
     width: 95%;
 }
 
-.earth_cont:hover,
-.arcade_cont:hover,
-.soccer_cont:hover,
-.race_cont:hover,
-.landscape_cont:hover,
-.nightSky_cont:hover,
-.curiosity_cont:hover,
-.fisheye_cont:hover {
-    opacity: 0.5;
-    /*color: var(--clr-secondary-bgr);*/
+.earth:hover,
+.arcade:hover,
+.soccer:hover,
+.race_car:hover,
+.landscape_photo:hover,
+.sky:hover,
+.mars_car:hover,
+.fisheye_photo:hover {
+    opacity: 0.4;
 }
 
-.arcade_cont:hover .arcade_title {
-    opacity: 1.0;
-    color: black;
-}
-
-    
+  
 /*style 3rd component - desktop */
 .footer_container {
     grid-template-columns: 1fr 1fr;
@@ -1036,7 +1030,7 @@ body {
 
 .footer_nav {
     justify-items: start;
-    margin: 0 0 3rem 0;
+    margin: 0 0 5rem 0;
     padding: 1.5rem;
     /*border: 2px solid yellow;*/
 }
@@ -1252,7 +1246,7 @@ body {
 
 .refsnes {
     justify-self: center;
-    margin: 1.5rem 0 0 7rem;
+    margin: 1rem 0 0 7rem;
     /*border: 2px solid yellow;*/
 }
 
