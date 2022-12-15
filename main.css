@@ -48,11 +48,6 @@ body {
 }
 
 /*---------------------Mobile layout-------------------------*/
-/*
-* {
-    border: 2px solid green;
-}*/
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -79,22 +74,15 @@ body {
     background-color: var( --clr-dark-gray);
 }
 
-/*-------navigation-------*/
+/*-------navigation mobile-------*/
 .header_nav {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-areas:
         'header_logo_container hamburger_container'
         'header_navLinks header_navLinks';
-    /*padding: 1.5rem;*/
     position: relative;
-    /*border: 2px solid green;*/
 }
-
-/*
-.header_nav > * {
-    border: 2px solid green;
-}*/
 
 .header_logo_container {
     display: grid;
@@ -104,7 +92,6 @@ body {
     justify-items: start;
     align-items: center;
     padding: 1.5rem 0 1rem 3rem;
-    /*border: 2px solid green;*/
 }
 
 .logo_icon {
@@ -119,13 +106,11 @@ body {
         'close_icon';
     justify-items: center;
     align-items: center;
-    /*border: 2px solid green;*/
 }
 
 .hamburger_icon {
     padding: 0.2rem;
     margin: 1.5rem 4rem;
-    /*border: 2px solid green;*/
 }
 
 .close_icon {
@@ -161,7 +146,6 @@ body {
     margin-left: 2rem;
     width: 90%;
 }
-
 /*-------------------------------------------------------*/
 
 .title {
@@ -193,7 +177,6 @@ body {
     gap: 2rem;
     justify-items: center;
     margin: 8rem 2rem 4rem 2rem;
-    /*border: 2px solid green;*/
 }
 
 .intro_img {
@@ -239,7 +222,6 @@ body {
         'creations_btn';
     gap: 2rem;
     justify-items: center;
-    /*border: 2px solid green;*/
 }
 
 .creations_title {
@@ -249,7 +231,6 @@ body {
     color: var(--clr-secondary-bgr);
     text-align: center;
     padding: 2rem;
-    /*border: 2px solid green;*/
 }
 
 .creations_img_container {
@@ -268,7 +249,7 @@ body {
     gap: 2rem;
 }
 
-/*---earth-----*/
+/*---earth image-----*/
 .earth_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -277,7 +258,6 @@ body {
         'earth_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .earth {
@@ -286,12 +266,10 @@ body {
     grid-template-areas:
         'deep_earth';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .deep_earth {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .earth_title {
@@ -302,10 +280,9 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 50%;
-    /*border: 2px solid red;*/
 }
 
-/*--------arcade--------*/
+/*--------arcade image--------*/
 .arcade_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -314,7 +291,6 @@ body {
         'arcade_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .arcade {
@@ -323,12 +299,10 @@ body {
     grid-template-areas:
         'night_arcade';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .night_arcade {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .arcade_title {
@@ -339,10 +313,9 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 50%;
-    /*border: 2px solid red;*/
 }
 
-/*-----soccer-------------*/
+/*-----soccer player image-------------*/
 .soccer_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -351,7 +324,6 @@ body {
         'soccer_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .soccer {
@@ -360,12 +332,10 @@ body {
     grid-template-areas:
         'soccer_team';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .soccer_team {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .soccer_title {
@@ -376,10 +346,9 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 50%;
-   /* border: 2px solid red;*/
 }
 
-/*---------race------------*/
+/*---------race car image-------------*/
 .race_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -388,7 +357,6 @@ body {
         'race_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .race_car {
@@ -397,12 +365,10 @@ body {
     grid-template-areas:
         'race';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .race {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .race_title {
@@ -413,10 +379,9 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 50%; 
-    /*border: 2px solid red;  */
 }
 
-/*----------landscape----------------*/
+/*----------landscape image-------------*/
 .landscape_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -425,7 +390,6 @@ body {
         'landscape_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .landscape_photo {
@@ -434,12 +398,10 @@ body {
     grid-template-areas:
         'landscape_from_above';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .landscape_from_above {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .landscape_title {
@@ -450,10 +412,9 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 55%;
-    /*border: 2px solid red;*/
 }
 
-/*-------night sky---------*/
+/*-------night sky image---------*/
 .nightSky_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -462,7 +423,6 @@ body {
         'nightSky_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .sky {
@@ -471,12 +431,10 @@ body {
     grid-template-areas:
         'night_sky';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .night_sky {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .nightSky_title {
@@ -487,10 +445,9 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 50%;
-    /*border: 2px solid red;*/
 }
 
-/*---------curiosity-------*/
+/*---------curiosity image-------*/
 .curiosity_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -499,7 +456,6 @@ body {
         'curiosity_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .mars_car {
@@ -508,12 +464,10 @@ body {
     grid-template-areas:
         'curiosity';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .curiosity {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .curiosity_title {
@@ -524,10 +478,9 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 50%;
-    /*border: 2px solid red;*/
 }
 
-/*---------fish eye--------*/
+/*---------fish eye image--------*/
 .fisheye_cont {
     display: grid;
     grid-template-columns: 1fr;
@@ -536,7 +489,6 @@ body {
         'fisheye_title';
     width: 85%;
     cursor: pointer;
-    /*border: 2px solid green;*/
 }
 
 .fisheye_photo {
@@ -545,12 +497,10 @@ body {
     grid-template-areas:
         'fisheye';
     justify-self: center;
-    /*border: 2px solid yellow;*/
 }
 
 .fisheye {
     justify-self: center;
-    /*border: 2px solid red;*/
 }
 
 .fisheye_title {
@@ -561,7 +511,6 @@ body {
     font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     width: 50%;
-    /*border: 2px solid red;*/
 }
 
 /*--------button------*/
@@ -598,7 +547,6 @@ body {
     background-color: var(--clr-secondary-bgr);
     margin-top: 8rem;
     justify-items: center;
-    /*border: 2px solid yellow;*/
 }
 
 .footer_nav {
@@ -622,6 +570,7 @@ body {
     width: 15rem;
 }
 
+/*---------footer navigation mobile------------------*/
 .footer_navLinks {
     display: grid;
     grid-template-columns: 1fr;
@@ -643,7 +592,9 @@ body {
     color: var(--clr-primary-bgr);
     text-decoration: none;
 }
+/*---------------------------------------------*/
 
+/*----social icon mobile-----*/
 .social_icons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -681,6 +632,7 @@ body {
     grid-template-areas:
         'instagram_icon';
 }
+/*---------------------------------------*/
 
 .refsnes {
     font-family: var(--ff-primary);
@@ -699,15 +651,6 @@ body {
     .grid-container{
         margin-left: 3.5rem;
     }
-/*
-    .intro_content {
-        margin-left: 2rem;
-    }
-
-    .creations {
-        margin-left: 2rem;
-    }*/
-
 }
 
 @media screen and (max-width: 18.125rem /*290px*/) {
@@ -719,30 +662,12 @@ body {
     .grid-container{
         margin-left: 6rem;
     }
-/*
-    .intro_img, .intro_title, .intro_article {
-        margin-left: 2rem;
-    }
-
-    .creations {
-        margin-left: 2rem;
-    }
-
-    .footer_container > * {
-        margin-left: 2rem; 
-    }*/
 }
 
 /*---------------------Desktop layout-------------------------*/
 @media screen and (min-width: 48rem) {
-/*
-* {
-    display: none;
-}
-*/
    
 /* style 1st component - desktop */  
-
 .header_container {
     background-image: url('images/desktop/image-hero.jpg');
     background-position: center center;
@@ -752,7 +677,7 @@ body {
     background-color: var( --clr-dark-gray);
 }
 
-/*--------navigation-------------------------*/
+/*--------header navigation desktop----------------------*/
 .header_nav {
     grid-template-columns: 60% 40%;
     grid-template-areas:
@@ -787,7 +712,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-   /*border: 2px solid green;*/
 }
 
 .header_navLinks_about {
@@ -918,14 +842,12 @@ body {
         '. . . . . . . intro_text intro_text intro_text intro_text .';
     gap: 0;
     max-width: 160rem;
-    /*border: 2px solid green;*/
 }
 
 .intro_img {
     width: 100%;
     justify-self: end;
     margin: 0 -2rem 0 0;
-    /*border: 2px solid green;*/
 }
 
 .intro_text {
@@ -934,7 +856,6 @@ body {
     padding: 5rem 7rem;
     margin: 5rem 0 0 -12rem;
     background-color: var(--clr-primary-bgr);
-    /*border: 2px solid green;*/
 }
 
 .intro_title {
@@ -942,7 +863,6 @@ body {
     justify-self: start;
     text-align: left;
     width: 90%;
-    /*border: 2px solid green;*/
 }
 
 .intro_article {
@@ -956,19 +876,15 @@ body {
     grid-template-areas:
         'creations_title creations_btn'
         'creations_img_container creations_img_container';
-    /*border: 2px solid green;*/
 }
 
 .creations_title {
     margin: 0 0 0 -11rem;
-    /*border: 2px solid green;*/
 }
 
 .creations_btn {
     justify-self: end;
-    /*margin: 0 16rem 0 0;*/
     width: 90%;
-    /*border: 2px solid green;*/
 }
 
 .btn {
@@ -987,7 +903,6 @@ body {
     grid-template-areas:
         'earth_cont arcade_cont soccer_cont race_cont'
         'landscape_cont nightSky_cont curiosity_cont fisheye_cont';
-    /*border: 2px solid green;*/
 }
 
 .soccer_title {
@@ -1025,26 +940,24 @@ body {
         'footer_nav social_icons'
         'footer_nav refsnes';
     margin-top: 16rem;
-    /*border: 2px solid green;*/
 }
 
 .footer_nav {
     justify-items: start;
     margin: 0 0 5rem 0;
     padding: 1.5rem;
-    /*border: 2px solid yellow;*/
 }
 
 .footer_logo_container {
     margin: 4rem 0 4rem 0;
 }
 
+/*---footer nvigation desktop----------*/
 .footer_navLinks {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
         'footer_navLinks_about footer_navLinks_careers footer_navLinks_events footer_navLinks_products footer_navLinks_support';
     margin: 0 0 0 -1rem;
-    /*border: 2px solid yellow;*/
 }
 
 .footer_navLinks_about {
@@ -1152,12 +1065,13 @@ body {
 .footer_navLinks_support:hover::after {
     transform: scale(1, 1);
 }
+/*--------------------------------------*/
 
+/*------social icons desktop---------------------*/
 .social_icons {
     justify-self: center;
     margin: 3rem 0 0 20rem;
     padding: 0 1.5rem 0 1.5rem;
-    /*border: 2px solid yellow;*/
 }
 
 .facebook_icon_container {
@@ -1243,14 +1157,15 @@ body {
 .instagram_icon_container:hover::after {
     transform: scale(1, 1);
 }
+/*-----------------------------------------------*/
 
 .refsnes {
     justify-self: center;
     margin: 1rem 0 0 7rem;
-    /*border: 2px solid yellow;*/
 }
 
-/* 3rd component styled in external stylesheet */
+/*style 4th component - desktop */
+/* 4th component styled in external stylesheet */
     
 }
 /*------------------grid area names---------------------------*/
@@ -1353,14 +1268,6 @@ body {
 
 .earth {
     grid-area: earth;
-}
-
-.deep_earth {
-    grid-area: deep_earth;
-}
-
-.earth_title {
-    grid-area: earth_title;
 }
 
 .deep_earth {

@@ -1,4 +1,4 @@
-'Use strict'
+'Use strict';
 /* navigation */
 const my_links = document.getElementsByClassName('header_navLinks')[0];
 const logo_container = document.getElementsByClassName('header_logo_container')[0];
@@ -47,7 +47,7 @@ function click_hamburger() {
 close_icon.addEventListener('click', click_close_icon);
 function click_close_icon() {
    if(my_links.style.display === 'grid') {
-      my_links.style.display = 'none'
+      my_links.style.display = 'none';
       logo_container.style.backgroundColor = 'transparent';
       hamburger_container.style.backgroundColor = 'transparent';
       hamburger_icon.style.display = 'block';
@@ -61,63 +61,63 @@ function click_close_icon() {
 
 earth.addEventListener('mouseover', () => {
     earth_title.style.color = 'black';
-})
+});
 earth.addEventListener('mouseleave', () => {
     earth_title.style.color = 'white';
-})
+});
 
 
 arcade.addEventListener('mouseover', () => {
     arcade_title.style.color = 'black';
-})
+});
 arcade.addEventListener('mouseleave', () => {
     arcade_title.style.color = 'white';
-})
+});
 
 
 soccer.addEventListener('mouseover', () => {
     soccer_title.style.color = 'black';
-})
+});
 soccer.addEventListener('mouseleave', () => {
     soccer_title.style.color = 'white';
-})
+});
 
 
 race_car.addEventListener('mouseover', () => {
     race_title.style.color = 'black';
-})
+});
 race_car.addEventListener('mouseleave', () => {
     race_title.style.color = 'white';
-})
+});
 
 
 landscape_photo.addEventListener('mouseover', () => {
     landscape_title.style.color = 'black';
-})
+});
 landscape_photo.addEventListener('mouseleave', () => {
     landscape_title.style.color = 'white';
-})
+});
 
 
 sky.addEventListener('mouseover', () => {
     nightSky_title.style.color = 'black';
-})
+});
 sky.addEventListener('mouseleave', () => {
     nightSky_title.style.color = 'white';
-})
+});
 
 
 mars_car.addEventListener('mouseover', () => {
     curiosity_title.style.color = 'black';
-})
+});
 mars_car.addEventListener('mouseleave', () => {
     curiosity_title.style.color = 'white';
-})
+});
 
 
 fisheye_photo.addEventListener('mouseover', () => {
     fisheye_title.style.color = 'black';
-})
+});
 fisheye_photo.addEventListener('mouseleave', () => {
     fisheye_title.style.color = 'white';
-})
+});
