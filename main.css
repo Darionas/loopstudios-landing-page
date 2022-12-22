@@ -699,15 +699,15 @@ body {
     grid-template-areas:
         'header_navLinks_about header_navLinks_careers header_navLinks_events header_navLinks_products header_navLinks_support';
     gap: 0;
-    justify-items: center;
-    padding: 4rem 0 4rem 0;
+    justify-items: start;
+    padding: 4rem 0 4rem 2rem;
     text-transform: capitalize;
 }
 
 [class*='header_navLinks_'] {
     font-family: var(--ff-secondary);
     font-size: 1.5rem;
-    font-weight: var(--fw-300);
+    font-weight: bold;
     color: var(--clr-primary-bgr);
     text-align: center;
     margin: 0;
