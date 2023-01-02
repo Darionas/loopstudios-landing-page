@@ -42,7 +42,6 @@ p {
 body {
     font-family: var(--ff-primary);
     background-color: var(--clr-primary-bgr);  
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -56,7 +55,6 @@ body {
         'main_content'
         'footer_container'
         'attribution';
-    min-width: 37.5rem;
 }
 
 /* style 1st component - mobile */

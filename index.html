@@ -14,20 +14,20 @@
 <body>
     <div class="grid-container">
         <!--1st component-->
-        <header class="header_container">
+        <header class="header_container" aria-label="main">
             <nav class="header_nav">
                 <a class="header_logo_container" href="#home"><img class="logo_icon" src="images/logo.svg" alt="Logo icon" /></a>
-                <div class="header_navLinks">            
-                    <a class="header_navLinks_about" href="#about">About</a>
-                    <a class="header_navLinks_careers" href="#careers">Careers</a>
-                    <a class="header_navLinks_events" href="#events">Events</a>
-                    <a class="header_navLinks_products" href="#products">Products</a>
-                    <a class="header_navLinks_support" href="#support">Support</a>
-                </div>
-                <div class="hamburger_container">
-                    <img class="hamburger_icon" src="images/icon-hamburger.svg" alt="Hamburger icon" />
-                    <img class="close_icon" src="images/icon-close.svg" alt="Close icon" />
-                </div>
+                <button aria-label="menu" aria-expanded="false">
+                    <img class="hamburger_icon" src="images/icon-hamburger.svg" alt="" />
+                    <img class="close_icon" src="images/icon-close.svg" alt="" />
+                </button>
+                <ul class="header_navLinks">            
+                    <li><a class="header_navLinks_about" href="#about">About</a></li>
+                    <li><a class="header_navLinks_careers" href="#careers">Careers</a></li>
+                    <li><a class="header_navLinks_events" href="#events">Events</a></li>
+                    <li><a class="header_navLinks_products" href="#products">Products</a></li>
+                    <li><a class="header_navLinks_support" href="#support">Support</a></li>
+                </ul>
             </nav>
             <h1 class="title">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
         </header>
@@ -121,7 +121,7 @@
             </section>
         </main>
         <!--3rd component-->
-        <footer class="footer_container">
+        <footer class="footer_container" aria-label="footer">
             <div class="footer_nav">
                 <a class="footer_logo_container" href="#home"><img class="footer_logo_icon" src="images/logo.svg" alt="Logo icon" /></a>
                 <div class="footer_navLinks">            
@@ -141,10 +141,10 @@
             <div class="refsnes">&#169; 2022 Loopstudios. All rights reserved.</div>
         </footer>
         <!--4th component-->
-        <div class="attribution">
+        <footer class="attribution" aria-label="page attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="#">@Darionas</a>.
-        </div>
+        </footer>
     </div>
 </body>
 </html>
