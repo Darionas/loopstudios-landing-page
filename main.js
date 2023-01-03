@@ -1,10 +1,9 @@
 'Use strict';
 /* navigation */
 const my_links = document.getElementsByClassName('header_navLinks')[0];
-const logo_container = document.getElementsByClassName('header_logo_container')[0];
-const hamburger_container = document.getElementsByClassName('hamburger_container')[0];
+const hamburger_menu = document.getElementsByClassName('hamburger_menu')[0];
 const hamburger_icon = document.getElementsByClassName('hamburger_icon')[0];
-const close_icon = document.getElementsByClassName('close_icon')[0];
+const show_close_icon = document.getElementsByClassName('show_close_icon')[0];
 
 /* images and images titles */
 const earth = document.getElementsByClassName('earth')[0];
@@ -25,9 +24,20 @@ const fisheye_photo = document.getElementsByClassName('fisheye_photo')[0];
 const fisheye_title = document.getElementsByClassName('fisheye_title')[0];
 
 
+/* https://stackoverflow.com/questions/4528085/toggle-show-hide-div-with-button*/
+hamburger_menu.addEventListener('click', function() {
+    if('[aria-expanded="false"]') {
+        hamburger_icon.classList.toggle('hamburger_icon');
+        show_close_icon.classList.toggle('close_icon');
+    }
+    if('[aria-expanded="true"]') {
+        my_links.classList.toggle('header_navLinks');
+    }
+})
+
 /*-----toggle hamburger icon------*/
 /*---click hamburger-----*/
-hamburger_icon.addEventListener('click', click_hamburger);
+/*hamburger_icon.addEventListener('click', click_hamburger);
 function click_hamburger() {
     if(my_links.style.display === 'grid') {
         my_links.style.display = 'none';
@@ -41,10 +51,10 @@ function click_hamburger() {
         hamburger_icon.style.display = 'none';
         close_icon.style.display = 'block';
     }
-}
+}*/
 
 /*------click cloce icon------*/
-close_icon.addEventListener('click', click_close_icon);
+/*close_icon.addEventListener('click', click_close_icon);
 function click_close_icon() {
    if(my_links.style.display === 'grid') {
       my_links.style.display = 'none';
@@ -55,10 +65,10 @@ function click_close_icon() {
    } else {
       return;
    }
-}
+}*/
 
 /* Changing images titles text color */
-
+/*
 earth.addEventListener('mouseover', () => {
     earth_title.style.color = 'black';
 });
@@ -121,3 +131,4 @@ fisheye_photo.addEventListener('mouseover', () => {
 fisheye_photo.addEventListener('mouseleave', () => {
     fisheye_title.style.color = 'white';
 });
+*/
