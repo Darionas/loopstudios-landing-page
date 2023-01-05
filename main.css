@@ -41,6 +41,7 @@ p {
 
 body {
     font-family: var(--ff-primary);
+    font-weight: var(--fw-300);
     background-color: var(--clr-primary-bgr);  
     justify-content: center;
     align-items: center;
@@ -56,7 +57,7 @@ body {
         'footer_container'
         'attribution';
     justify-self: center;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 /* style 1st component - mobile */
@@ -66,13 +67,13 @@ body {
     grid-template-areas:
         'header_nav'
         'title';
-    /*background-image: url('images/mobile/image-hero.jpg');
+    background-image: url('images/mobile/image-hero.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;*/
+    background-size: cover;
     background-color: var( --clr-dark-gray);
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 /*-------navigation mobile-------*/
@@ -81,8 +82,7 @@ body {
     grid-template-columns: 0.6fr 0.4fr;
     grid-template-areas:
         'header_logo_container hamburger_menu';
-    /*position: relative;*/
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
 }
 
 .header_logo_container {
@@ -93,14 +93,14 @@ body {
     justify-items: start;
     align-items: center;
     z-index: 2;
-    border: 2px solid brown;
+    /*border: 2px solid brown;*/
 }
 
 .logo_icon {
     width: 12rem;
     padding: 0.2rem;
     margin: 1.5rem 0 1rem 2rem;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 .hamburger_menu {
@@ -113,31 +113,29 @@ body {
     align-items: center;
     background-color: transparent;
     border: none;
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
 }
 
 .hamburger_icon {
     justify-self: end;
     align-self: center;
+    width: 2.8rem;
     padding: 0.2rem;
     margin: 1.5rem 1.5rem 1rem 0;
-    border: 2px solid green;
-}
-
-.close_hmburger_icon {
-    display: none;
-}
-
-.show_close_icon {
-    justify-self: end;
-    padding: 0.2rem;
-    margin: 0 1.5rem 1rem 0;
-    z-index: 2;
     /*border: 2px solid green;*/
 }
 
 .close_icon {
     display: none;
+}
+
+.show_close_icon {
+    justify-self: end;
+    width: 2.8rem;
+    padding: 0.2rem;
+    margin: 0 1.5rem 1rem 0;
+    z-index: 2;
+    /*border: 2px solid green;*/
 }
 
 .header_navLinks {
@@ -154,32 +152,30 @@ body {
     z-index: 1;
     background-color: var(--clr-secondary-bgr);
     width: 100%;
+    /*border: 2px solid yellow;*/
 }
 
 [class*='header_navLinks_'] {
     font-family: var(--ff-secondary);
     font-size: 2rem;
-    font-weight: var(--fw-300);
     line-height: 2;
     color: var(--clr-primary-bgr);
     padding: 1rem;
     text-decoration: none;
     margin-left: 2rem;
-    /*width: 90%;*/
 }
 
 /*-------------------------------------------------------*/
 
 .title {
     font-family: var(--ff-secondary);
-    font-size: 3rem;/*3.6rem;*/
-    font-weight: var(--fw-300);
+    font-size: 3rem;
     text-transform: uppercase;
     color: var(--clr-primary-bgr);
     padding: 1.5rem;
     margin: 15rem 0.5rem 18rem 2.5rem;
     border: 2px solid var(--clr-primary-bgr);
-    max-width: 28rem;/*75%;*/
+    max-width: 28rem;
     
 }
 
@@ -190,6 +186,9 @@ body {
     grid-template-areas:
         'intro_content'
         'creations';
+    justify-self: center;
+    justify-items: center;
+    /*border: 2px solid blue;*/
 }
 
 .intro_content {
@@ -200,12 +199,17 @@ body {
         'intro_text';
     gap: 2rem;
     justify-items: center;
-    margin: 8rem 2rem 4rem 2rem;
+    margin: 6rem 1.5rem 4rem 1.5rem;
+    /*border: 2px solid red;*/
 }
 
 .intro_img {
-    justify-self: center;
-    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'image_interactive';
+    justify-items: center;
+    /*border: 2px solid green;*/
 }
 
 .intro_text {
@@ -215,17 +219,18 @@ body {
         'intro_title'
         'intro_article';
     justify-items: center;
+    margin: 1rem 0 0 0;
+    /*border: 2px solid green;*/
 }
 
 .intro_title {
     font-family: var(--ff-secondary);
     font-size: 3rem;
-    font-weight: var(--fw-300);
     text-transform: uppercase;
     color: var(--clr-secondary-bgr);
     text-align: center;
-    margin-top: 1rem;
-    width: 95%;
+    padding: 1rem;
+    /*border: 2px solid brown;*/
 }
 
 .intro_article {
@@ -235,7 +240,7 @@ body {
     color: var(--clr-dark-gray);
     text-align: center;
     padding: 1rem;
-    width: 95%;
+    /*border: 2px solid black;*/
 }
 
 .creations {
@@ -247,16 +252,18 @@ body {
         'creations_btn';
     gap: 2rem;
     justify-items: center;
+    margin: 0 1.5rem 0 1.5rem;
+    /*border: 2px solid brown;*/
 }
 
 .creations_title {
     font-family: var(--ff-secondary);
     font-size: 3rem;
-    font-weight: var(--fw-300);
     text-transform: uppercase;
     color: var(--clr-secondary-bgr);
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
+    /*border: 2px solid green;*/
 }
 
 .creations_img_container {
@@ -273,6 +280,7 @@ body {
         'fisheye_cont';
     justify-items: center;
     gap: 2rem;
+    /*border: 2px solid green;*/
 }
 
 /*---earth image-----*/
@@ -280,10 +288,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'earth'
+        'earth_link'
         'earth_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.earth_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'earth';
+    justify-self: center;
 }
 
 .earth {
@@ -295,17 +310,22 @@ body {
 }
 
 .deep_earth {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .earth_title {
-    margin: -7rem 0 0 1rem;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
-    width: 50%;
+    justify-self: start;
+    align-self: start;
+    width: 42%;
+    /*border: 2px solid yellow;*/
 }
 
 /*--------arcade image--------*/
@@ -313,10 +333,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'arcade'
+        'arcade_link'
         'arcade_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.arcade_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'arcade';
+    justify-self: center;
 }
 
 .arcade {
@@ -328,17 +355,22 @@ body {
 }
 
 .night_arcade {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .arcade_title {
-    margin: -7rem 0 0 1rem;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
-    width: 50%;
+    justify-self: start;
+    align-self: start;
+    width: 42%;
+    /*border: 2px solid yellow;*/
 }
 
 /*-----soccer player image-------------*/
@@ -346,10 +378,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'soccer'
+        'soccer_link'
         'soccer_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.soccer_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'soccer';
+    justify-self: center;
 }
 
 .soccer {
@@ -361,17 +400,22 @@ body {
 }
 
 .soccer_team {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .soccer_title {
-    margin: -7rem 0 0 1rem;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
+    justify-self: start;
+    align-self: start;
     width: 50%;
+    /*border: 2px solid yellow;*/
 }
 
 /*---------race car image-------------*/
@@ -379,10 +423,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'race_car'
+        'race_link'
         'race_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.race_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'race_car';
+    justify-self: center;
 }
 
 .race_car {
@@ -394,17 +445,22 @@ body {
 }
 
 .race {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .race_title {
-    margin: -7rem 0 0 1rem;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
-    width: 50%; 
+    justify-self: start;
+    align-self: start;
+    width: 42%;
+    /*border: 2px solid yellow; */
 }
 
 /*----------landscape image-------------*/
@@ -412,10 +468,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'landscape_photo'
+        'landscape_link'
         'landscape_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.landscape_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'landscape_photo';
+    justify-self: center;
 }
 
 .landscape_photo {
@@ -427,17 +490,22 @@ body {
 }
 
 .landscape_from_above {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .landscape_title {
-    margin: -7rem 0 0.7rem 1rem;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
+    justify-self: start;
+    align-self: start;
     width: 55%;
+    /*border: 2px solid yellow;*/
 }
 
 /*-------night sky image---------*/
@@ -445,10 +513,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'sky'
+        'nightSky_link'
         'nightSky_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.nightSky_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'sky';
+    justify-self: center;
 }
 
 .sky {
@@ -460,17 +535,22 @@ body {
 }
 
 .night_sky {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .nightSky_title {
-    margin: -7rem 0 0 1rem;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
+    justify-self: start;
+    align-self: start;
     width: 50%;
+    /*border: 2px solid yellow;*/
 }
 
 /*---------curiosity image-------*/
@@ -478,10 +558,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'mars_car'
+        'curiosity_link'
         'curiosity_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.curiosity_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'mars_car';
+    justify-self: center;
 }
 
 .mars_car {
@@ -493,17 +580,22 @@ body {
 }
 
 .curiosity {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .curiosity_title {
-    margin: -7rem 0 0 0;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
+    justify-self: start;
+    align-self: start;
     width: 50%;
+    /*border: 2px solid yellow;*/
 }
 
 /*---------fish eye image--------*/
@@ -511,10 +603,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-        'fisheye_photo'
+        'fisheye_link'
         'fisheye_title';
-    width: 85%;
     cursor: pointer;
+}
+
+.fisheye_link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'fisheye_photo';
+    justify-self: center;
 }
 
 .fisheye_photo {
@@ -526,17 +625,22 @@ body {
 }
 
 .fisheye {
+    background-blend-mode: darken;
     justify-self: center;
 }
 
 .fisheye_title {
-    margin: -7rem 0 0 1rem;
-    padding: 0 0 0 1.5rem;
+    margin: -6rem 0 0 0;
+    padding: 1rem;
     font-family: var(--ff-secondary);
-    font-size: 2.5rem;
-    font-weight: var(--fw-300);
+    font-size: 2rem;
+    font-weight: var(--fw-400);
+    text-transform: uppercase;
     color: var(--clr-primary-bgr);
+    justify-self: start;
+    align-self: start;
     width: 50%;
+    /*border: 2px solid yellow;*/
 }
 
 /*--------button------*/
@@ -545,12 +649,13 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas:
         'btn';
-    width: 70%;
+    width: 12rem;
     justify-items: center;
+    /*border: 2px solid green;*/
 }
 
 .btn {
-    width: 25%;
+    width: 90%;
     font-family: var(--ff-primary);
     font-size: 1.2rem;
     font-weight: var(--fw-400);
@@ -614,7 +719,6 @@ body {
 [class*= 'footer_navLinks_'] {
     font-family: var(--ff-primary);
     font-size: 1.5rem;
-    font-weight: var(--fw-300);
     color: var(--clr-primary-bgr);
     text-decoration: none;
 }
@@ -662,10 +766,10 @@ body {
 
 .refsnes {
     font-family: var(--ff-primary);
-    font-size: 1.5rem;
-    font-weight: var(--fw-300);
+    font-size: 1.2rem;
     color: var(--clr-dark-gray);
     margin-bottom: 3rem;
+    /*border: 2px solid yellow;*/
 }
 
 /* style 4th component - mobile */
@@ -673,66 +777,57 @@ body {
     margin-bottom: 2rem;
 }*/
 
-/*@media screen and (max-width: 21.25rem *//*340px*//*) {
-    .grid-container{
-        margin-left: 3.5rem;
-    }
-}
-
-@media screen and (max-width: 18.125rem *//*290px*//*) {
-
-    .title {
-        margin-left: 4rem;
-    }
-
-    .grid-container{
-        margin-left: 6rem;
-    }
-}*/
-
 /*---------------------Desktop layout-------------------------*/
 @media screen and (min-width: 48rem) {
-
-* {
-    display: none;
-}
    
 /* style 1st component - desktop */  
 .header_container {
     background-image: url('images/desktop/image-hero.jpg');
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
+    background-blend-mode: darken;
     background-color: var( --clr-dark-gray);
 }
 
-/*--------header navigation desktop----------------------*/
+/*--------navigation desktop----------------------*/
 .header_nav {
-    grid-template-columns: 60% 40%;
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
     grid-template-areas:
-        'header_logo_container header_navLinks';
-}
-
-.logo_icon {
-    margin-left: 4rem;
-    padding: 3rem 0 2rem 0;
+        'header_logo_container grid_nav';
+    /*border: 2px solid red;*/
 }
 
 .hamburger_menu {
     display: none;
 }
 
-.header_navLinks {
+.logo_icon {
+    /*margin: 2rem;*/
+    padding: 1rem;
+    width: 18rem;
+   /*border: 2px solid green;*/
+}
+
+.grid_nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
         'header_navLinks_about header_navLinks_careers header_navLinks_events header_navLinks_products header_navLinks_support';
-    gap: 0;
-    justify-items: start;
-    padding: 4rem 0 4rem 2rem;
+    gap: 1rem;
+    position: relative;
+    width: 60rem;
+    justify-self: end;
+    justify-items: center;
+    align-self: center;
+    padding: 0.5rem 3rem 0.5rem 1rem;
     text-transform: capitalize;
+    background-color: transparent;
+    /*border: 2px solid blue;*/
 }
+
 
 [class*='header_navLinks_'] {
     font-family: var(--ff-secondary);
@@ -740,10 +835,12 @@ body {
     font-weight: bold;
     color: var(--clr-primary-bgr);
     text-align: center;
-    margin: 0;
-    padding: 0;
+    padding: 1rem 0 1rem 0;
+    /*border: 2px solid yellow;*/
 }
 
+/* underline nav botton*/
+/*https://www.youtube.com/watch?v=R033rKs6sgA*/
 .header_navLinks_about {
     max-width: 5rem;
     position: relative;
@@ -756,7 +853,6 @@ body {
     display: block;
     height: 2px;
     background-color: white;
-    bottom: -5px;
     left: 25%;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
@@ -778,7 +874,6 @@ body {
     display: block;
     height: 2px;
     background-color: white;
-    bottom: -5px;
     left: 25%;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
@@ -800,7 +895,6 @@ body {
     display: block;
     height: 2px;
     background-color: white;
-    bottom: -5px;
     left: 25%;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
@@ -822,7 +916,6 @@ body {
     display: block;
     height: 2px;
     background-color: white;
-    bottom: -5px;
     left: 25%;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
@@ -844,7 +937,6 @@ body {
     display: block;
     height: 2px;
     background-color: white;
-    bottom: -5px;
     left: 25%;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
@@ -853,8 +945,8 @@ body {
 .header_navLinks_support:hover::after {
     transform: scale(1, 1);
 }
-
 /*----------------------------------------------------------*/
+
 .title {
     font-size: 7rem;
     margin: 19rem 6rem 19rem 6rem;
@@ -906,20 +998,25 @@ body {
     grid-template-areas:
         'creations_title creations_btn'
         'creations_img_container creations_img_container';
+    /*border: 2px solid green;*/
 }
 
 .creations_title {
-    margin: 0 0 0 -11rem;
+    /*margin: 0 0 0 -11rem;*/
+    justify-self: start;
+    align-self: center;
+    /*border: 2px solid green;*/
 }
 
 .creations_btn {
     justify-self: end;
-    width: 90%;
+    align-self: center;
+    height: 3rem;
+    /*border: 2px solid green;*/
 }
 
 .btn {
-    margin: 2rem 2rem 2rem 16rem;
-    width: 20%;
+    padding: 0;
     cursor: pointer;
 }
 
@@ -935,33 +1032,94 @@ body {
         'landscape_cont nightSky_cont curiosity_cont fisheye_cont';
 }
 
+.earth_title {
+    width: 8rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+    /*border: 2px solid yellow;*/
+}
+
+.arcade_title {
+    width: 12rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+    /*border: 2px solid yellow;*/
+}
+
 .soccer_title {
-    width: 83%;
+    width: 12rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+    /*border: 2px solid yellow;*/
+}
+
+.race_title {
+    width: 8rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+    /*border: 2px solid yellow;*/
 }
 
 .landscape_title {
-    width: 95%;
+    width: 13rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+    /*border: 2px solid yellow;*/
+}
+
+.nightSky_title {
+    width: 12rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+    /*border: 2px solid yellow;*/
 }
 
 .curiosity_title {
-    width: 85%;
+    width: 14rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+   /*border: 2px solid yellow;*/
 }
 
 .fisheye_title {
-    width: 95%;
+    width: 12rem;
+    margin: -8rem 0 0 2rem;
+    font-size: 2.4rem;
+    padding: 0;
+    /*border: 2px solid yellow;*/
 }
 
-.earth:hover,
-.arcade:hover,
-.soccer:hover,
-.race_car:hover,
-.landscape_photo:hover,
-.sky:hover,
-.mars_car:hover,
-.fisheye_photo:hover {
+.earth_link:hover,
+.arcade_link:hover,
+.soccer_link:hover,
+.race_link:hover,
+.landscape_link:hover,
+.nightSky_link:hover,
+.curiosity_link:hover,
+.fisheye_link:hover {
     opacity: 0.4;
 }
 
+/*on hover style another element*/
+/*https://stackoverflow.com/questions/6910049/on-a-css-hover-event-can-i-change-another-divs-styling*/
+/*https://stackoverflow.com/questions/4502633/how-to-affect-other-elements-when-one-element-is-hovered*/
+.earth_link:hover + .earth_title,
+.arcade_link:hover + .arcade_title,
+.soccer_link:hover + .soccer_title,
+.race_link:hover + .race_title,
+.landscape_link:hover + .landscape_title,
+.nightSky_link:hover + .nightSky_title,
+.curiosity_link:hover + .curiosity_title,
+.fisheye_link:hover + .fisheye_title {
+    color: var(--clr-secondary-bgr);
+}
   
 /*style 3rd component - desktop */
 .footer_container {
@@ -1216,8 +1374,21 @@ body {
     grid-area: logo_icon;
 }
 
-.header_navLinks {
-    grid-area: header_navLinks;
+.hamburger_menu {
+    grid-area: hamburger_menu;
+}
+
+.hamburger_icon {
+    grid-area: hamburger_icon;
+}
+
+.close_icon {
+    grid-area: close_icon;
+}
+
+
+.grid_nav {
+    grid-area: grid_nav;
 }
 
 .header_navLinks_about {
@@ -1240,18 +1411,6 @@ body {
     grid-area: header_navLinks_support;
 }
 
-.hamburger_menu {
-    grid-area: hamburger_menu;
-}
-
-.hamburger_icon {
-    grid-area: hamburger_icon;
-}
-
-.close_icon {
-    grid-area: close_icon;
-}
-
 .title {
     grid-area: title;
 }
@@ -1266,6 +1425,10 @@ body {
 
 .intro_img {
     grid-area: intro_img;
+}
+
+.image_interactive {
+    grid-area: image_interactive;
 }
 
 .intro_text {
@@ -1296,6 +1459,10 @@ body {
     grid-area: earth_cont;
 }
 
+.earth_link {
+    grid-area: earth_link;
+}
+
 .earth {
     grid-area: earth;
 }
@@ -1310,6 +1477,10 @@ body {
 
 .arcade_cont {
     grid-area: arcade_cont;
+}
+
+.arcade_link {
+    grid-area: arcade_link;
 }
 
 .arcade {
@@ -1328,6 +1499,10 @@ body {
     grid-area: soccer_cont;
 }
 
+.soccer_link {
+    grid-area: soccer_link;
+}
+
 .soccer {
     grid-area: soccer;
 }
@@ -1342,6 +1517,10 @@ body {
 
 .race_cont {
     grid-area: race_cont;
+}
+
+.race_link {
+    grid-area: race_link;
 }
 
 .race_car {
@@ -1360,6 +1539,10 @@ body {
     grid-area: landscape_cont;
 }
 
+.landscape_link {
+    grid-area: landscape_link;
+}
+
 .landscape_photo {
     grid-area: landscape_photo;
 }
@@ -1374,6 +1557,10 @@ body {
 
 .nightSky_cont {
     grid-area: nightSky_cont;
+}
+
+.nightSky_link {
+    grid-area: nightSky_link;
 }
 
 .sky {
@@ -1392,6 +1579,10 @@ body {
     grid-area: curiosity_cont;
 }
 
+.curiosity_link {
+    grid-area: curiosity_link;
+}
+
 .mars_car {
     grid-area: mars_car;
 }
@@ -1406,6 +1597,10 @@ body {
 
 .fisheye_cont {
     grid-area: fisheye_cont;
+}
+
+.fisheye_link {
+    grid-area: fisheye_link;
 }
 
 .fisheye {
