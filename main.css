@@ -176,7 +176,6 @@ body {
     margin: 15rem 0.5rem 18rem 2.5rem;
     border: 2px solid var(--clr-primary-bgr);
     max-width: 28rem;
-    
 }
 
 /* style 2nd component - mobile */
@@ -678,6 +677,7 @@ body {
     background-color: var(--clr-secondary-bgr);
     margin-top: 8rem;
     justify-items: center;
+    /*border: 2px solid yellow;*/
 }
 
 .footer_nav {
@@ -687,6 +687,7 @@ body {
         'footer_logo_container'
         'footer_navLinks';
     justify-items: center;
+    /*border: 2px solid yellow;*/
 }
 
 .footer_logo_container {
@@ -695,9 +696,11 @@ body {
     grid-template-areas:
         'footer_logo_icon';
     margin: 5rem 0 3rem 0;
+    /*border: 2px solid yellow;*/
 }
 
 .footer_logo_icon {
+    padding: 0.5rem;
     width: 15rem;
 }
 
@@ -732,7 +735,9 @@ body {
         'facebook_icon_container twitter_icon_container pinterest_icon_container instagram_icon_container';
     gap: 1.5rem;
     margin: 2rem 0 2rem 0;
+    padding: 0.5rem;
     align-items: center;
+    /*border: 2px solid yellow;*/
 }
 
 .facebook_icon_container {
@@ -768,7 +773,8 @@ body {
     font-family: var(--ff-primary);
     font-size: 1.2rem;
     color: var(--clr-dark-gray);
-    margin-bottom: 3rem;
+    margin: 0 0 3rem 0;
+    padding: 0.5rem;
     /*border: 2px solid yellow;*/
 }
 
@@ -1128,16 +1134,20 @@ body {
         'footer_nav social_icons'
         'footer_nav refsnes';
     margin-top: 16rem;
+    /*border: 2px solid yellow;*/
 }
 
 .footer_nav {
+    justify-self: start;
     justify-items: start;
-    margin: 0 0 5rem 0;
+    margin: 0 0 3rem 5rem;
     padding: 1.5rem;
+    /*border: 2px solid yellow;*/
 }
 
 .footer_logo_container {
     margin: 4rem 0 4rem 0;
+    /*border: 2px solid yellow;*/
 }
 
 /*---footer nvigation desktop----------*/
@@ -1145,9 +1155,11 @@ body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
         'footer_navLinks_about footer_navLinks_careers footer_navLinks_events footer_navLinks_products footer_navLinks_support';
-    margin: 0 0 0 -1rem;
+    justify-self: start;
+    /*border: 2px solid yellow;*/
 }
 
+/* underline nav buttons */
 .footer_navLinks_about {
     position: relative;
 }
@@ -1257,11 +1269,13 @@ body {
 
 /*------social icons desktop---------------------*/
 .social_icons {
-    justify-self: center;
-    margin: 3rem 0 0 20rem;
-    padding: 0 1.5rem 0 1.5rem;
+    justify-self: end;
+    margin: 3rem 5rem 0 0;
+    padding: 0 1rem 0 1rem;
+    /*border: 2px solid yellow;*/
 }
 
+/* underline social icons */
 .facebook_icon_container {
     position: relative;
 }
@@ -1348,8 +1362,10 @@ body {
 /*-----------------------------------------------*/
 
 .refsnes {
-    justify-self: center;
-    margin: 1rem 0 0 7rem;
+    justify-self: end;
+    margin: 1rem 5rem 0 0;
+    padding: 0 1rem;
+    /*border: 2px solid yellow;*/
 }
 
 /*style 4th component - desktop */
