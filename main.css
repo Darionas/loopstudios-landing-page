@@ -79,7 +79,7 @@ body {
 /*-------navigation mobile-------*/
 .header_nav {
     display: grid;
-    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-columns: 1fr min-content;
     grid-template-areas:
         'header_logo_container hamburger_menu';
     /*border: 2px solid blue;*/
@@ -103,55 +103,54 @@ body {
     /*border: 2px solid green;*/
 }
 
+[aria-expanded="false"] .close_icon {
+    display: none;
+  }
+  
+  [aria-expanded="true"] .hamburger_icon {
+    display: none;
+  }
+  
+  [aria-expanded="true"] .close_icon {
+    display: block;
+  }
+  
+  [aria-expanded="false"] .hamburger_icon {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ .header_navLinks, .show_nav {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ .header_navLinks, .show_nav {
+    display: block;
+  }
+
+  .hamburger_menu img {
+    width: 100%;
+  }
+
 .hamburger_menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        'hamburger_icon'
-        'close_icon';
-    justify-items: center;
-    align-items: center;
     background-color: transparent;
     border: none;
-    /*border: 2px solid yellow;*/
-}
-
-.hamburger_icon {
-    justify-self: end;
-    align-self: center;
-    width: 2.8rem;
-    padding: 0.2rem;
-    margin: 1.5rem 1.5rem 1rem 0;
-    /*border: 2px solid green;*/
-}
-
-.close_icon {
-    display: none;
-}
-
-.show_close_icon {
-    justify-self: end;
-    width: 2.8rem;
-    padding: 0.2rem;
-    margin: 0 1.5rem 1rem 0;
+    padding: 1rem;
     z-index: 2;
-    /*border: 2px solid green;*/
-}
-
-.header_navLinks {
-    display: none;
+    min-width: 4.4rem;
+    place-content: center;
+    /*border: 2px solid yellow;*/
 }
 
 .show_nav {
     list-style-type: none;
     overflow: hidden;
-    padding: 30% 0 100% 0;
     text-transform: uppercase;
-    line-height: 2;
+    line-height: 3;
     position: absolute;
+    inset: 0;
     z-index: 1;
+    padding: 10rem 0 0 0;
     background-color: var(--clr-secondary-bgr);
-    width: 100%;
     /*border: 2px solid yellow;*/
 }
 
@@ -800,9 +799,10 @@ body {
 /*--------navigation desktop----------------------*/
 .header_nav {
     display: grid;
-    grid-template-columns: 1fr 0.6fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        'header_logo_container grid_nav';
+        'header_logo_container header_navLinks';
+    gap: 10rem;
     /*border: 2px solid red;*/
 }
 
@@ -811,21 +811,24 @@ body {
 }
 
 .logo_icon {
-    /*margin: 2rem;*/
     padding: 1rem;
-    width: 18rem;
+    width: 20rem;
    /*border: 2px solid green;*/
 }
 
-.grid_nav {
+[aria-expanded="false"] ~ .header_navLinks {
+    display: inline-flex;
+  }
+
+.header_navLinks {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
         'header_navLinks_about header_navLinks_careers header_navLinks_events header_navLinks_products header_navLinks_support';
     gap: 1rem;
     position: relative;
-    width: 60rem;
-    justify-self: end;
+    margin: 0 10rem 0 0;
+    justify-self: center;
     justify-items: center;
     align-self: center;
     padding: 0.5rem 3rem 0.5rem 1rem;
@@ -860,6 +863,7 @@ body {
     height: 2px;
     background-color: white;
     left: 25%;
+    bottom: 2px;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
 }
@@ -881,6 +885,7 @@ body {
     height: 2px;
     background-color: white;
     left: 25%;
+    bottom: 2px;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
 }
@@ -902,6 +907,7 @@ body {
     height: 2px;
     background-color: white;
     left: 25%;
+    bottom: 2px;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
 }
@@ -923,6 +929,7 @@ body {
     height: 2px;
     background-color: white;
     left: 25%;
+    bottom: 2px;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
 }
@@ -944,6 +951,7 @@ body {
     height: 2px;
     background-color: white;
     left: 25%;
+    bottom: 2px;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
 }
@@ -1394,17 +1402,8 @@ body {
     grid-area: hamburger_menu;
 }
 
-.hamburger_icon {
-    grid-area: hamburger_icon;
-}
-
-.close_icon {
-    grid-area: close_icon;
-}
-
-
-.grid_nav {
-    grid-area: grid_nav;
+.header_navLinks {
+    grid-area: header_navLinks;
 }
 
 .header_navLinks_about {

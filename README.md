@@ -64,7 +64,7 @@ But created with love.
 
 - Grid layout module.
 - JavaScript.
-- Practice dealing with Git & GitHub.
+- Practise dealing with Git & GitHub.
 
 ### Useful resources
 
