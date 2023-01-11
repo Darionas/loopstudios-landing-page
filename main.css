@@ -77,6 +77,7 @@ body {
 }
 
 /*-------navigation mobile-------*/
+/* https://xane514.medium.com/aria-controls-for-creating-a-mobile-navbar-6001012153a0 */
 .header_nav {
     display: grid;
     grid-template-columns: 1fr min-content;
